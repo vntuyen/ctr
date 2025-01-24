@@ -18,7 +18,7 @@ install_r_packages <- function(packages) {
 }
 
 # List of R packages to install and load
-r_packages <- c("dplyr", "graph", "rpart")
+r_packages <- c("dplyr", "rpart")
 
 # Install and load all required packages
 install_r_packages(r_packages)
