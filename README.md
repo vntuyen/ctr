@@ -31,20 +31,38 @@ a merged cohort of 222 samples for our study
  
 **Detailed Guidelines for Environment Setup using Conda on Linux**
 
-***1. Create environment***
+***1. Create a Conda Environment***
+Create a new Conda environment named ctr_env with specific versions of Python and R: (bash)
      
     conda create -n ctr_env python=3.12 r-base=4.3 -c conda-forge -y
     conda activate ctr_env
-***2. Install python packages:***
+***2. Install Python Packages:***
+     Install essential Python packages using pip: (bash)
      
     pip install numpy pandas scikit-learn scipy matplotlib seaborn
 ***3. Install R packages:***
+
+   Install the r-devtools package via Conda: (bash)
      
     conda install r-devtools
+
+   Launch R within the environment: (bash)
+
     R
-    devtools::install_github("susanathey/causalTree") 
-    install.packages(c("dplyr", "graph", "rpart"),  repos = "https://cloud.r-project.org", dependencies = TRUE)
-    rownames(installed.packages()) 
+
+   In the R session, install the required R packages: (R script)
+
+    # Install the 'causalTree' package from GitHub
+    devtools::install_github("susanathey/causalTree")
+    
+    # Install additional R packages from CRAN
+    install.packages(c("dplyr", "graph", "rpart"), repos = "https://cloud.r-project.org", dependencies = TRUE)
+    
+    # Verify installed R packages
+    rownames(installed.packages())
+
+   Exit the R session: (R script)
+   
     q()
     
 
