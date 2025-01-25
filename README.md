@@ -32,6 +32,9 @@ a merged cohort of 222 samples for our study
 **Detailed Guidelines for Environment Setup using Conda on Linux**
 
 ***1. Create a Conda Environment***
+
+Firstly, follow the link to [install Conda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install)
+
 Create a new Conda environment named ctr_env with specific versions of Python and R: (bash)
      
     conda create -n ctr_env python=3.12 r-base=4.3 -c conda-forge -y
