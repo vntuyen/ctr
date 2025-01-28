@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+Rscript do_NEOdata.R
+
+python do_baselines.py
+python generate_results.py
