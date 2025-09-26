@@ -72,10 +72,10 @@ Create a new Conda environment named ctr_env with specific versions of Python an
 
 **1. Run the CTR model with 2 datasets**
 
-    Rscript do_NEOdata.R
+    Rscript run_CTR.R
 **2. Run 6 baselines with 2 datasets**
 
-    python do_baselines.py
+    python run_baselines.py
 **3. Generate Evaluation Results in the paper**
 
     python survival_analysis.py
