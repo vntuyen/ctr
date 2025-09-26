@@ -1,9 +1,10 @@
 #!/bin/bash
 
 
-Rscript do_CTR.R
+Rscript run_CTR.R
 
-python do_baselines.py
+python run_baselines.py
 
 python survival_analysis.py
 python recovery_comparison.py
+
