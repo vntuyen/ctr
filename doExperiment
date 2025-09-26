@@ -1,7 +1,9 @@
 #!/bin/bash
 
 
-Rscript do_NEOdata.R
+Rscript do_CTR.R
 
 python do_baselines.py
-python generate_results.py
+
+python survival_analysis.py
+python recovery_comparison.py
