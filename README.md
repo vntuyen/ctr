@@ -1,18 +1,15 @@
 
-# Causality-based Therapy plan Recommendation (CTR)
-A Python and R implementation of Causality-based Therapy plan Recommendation (CTR) method in paper "Personalised Neoadjuvant Therapy Recommendations for Breast Cancer: A Causal Inference Approach using Multi-omics Data".
+# Causal-based Therapy Recommendation (CTR)
+A Python and R implementation of Causal-based Therapy Recommendation (CTR) method in paper "Causal Recommendation Method for Personalised Chemotherapy Optimisation in Breast Cancer".
 
 
 # Infrastructure used to run experiments:
-* OS: Kali GNU/Linux, version 2024.2. (Linux 5.15.167.4-microsoft-standard-WSL2 x86_64)
+* OS: Ubuntu 24.04.3 LTS (Linux 5.15.167.4-microsoft-standard-WSL2 x86_64)
 * CPU: Intel(R) Core(TM) i7-1255U @ 1.70GHz).
 * RAM: 16 GB.
 
 # Dataset
-We utilized observational data from the TransNEO
-neoadjuvant breast cancer clinical trial with 147 samples (Sammut et al., 2022) and
-the ARTemis clinical trial with 75 samples (Earl et al., 2015). Together, these two datasets provided
-a merged cohort of 222 samples for our study
+We used observational data from two sources: the DUKE dataset (Saha et al., 2021) and the TransNEO dataset (Sammut et al., 2022, Earl et al., 2015).
 
 
 # Installation
@@ -73,12 +70,13 @@ Create a new Conda environment named ctr_env with specific versions of Python an
 
 # Reproducing the Paper Results
 
-**1. Run the Causality-based Therapy plan Recommendation (CTR)**
+**1. Run the CTR model with 2 datasets**
 
     Rscript do_NEOdata.R
-**2. Run 6 baselines with the NEO dataset**
+**2. Run 6 baselines with 2 datasets**
 
     python do_baselines.py
-**3. Generate results in the paper**
+**3. Generate Evaluation Results in the paper**
 
-    python generate_results.py
+    python survival_analysis.py
+    python recovery_comparison.py
