@@ -4,7 +4,7 @@ A Python and R implementation of Causal-based Therapy Recommendation (CTR) metho
 
 
 # Infrastructure used to run experiments:
-* OS: Ubuntu 24.04.3 LTS (Linux 5.15.167.4-microsoft-standard-WSL2 x86_64)
+* OS: Ubuntu 24.04.3 LTS (Windows Subsystem for Linux WSL2)
 * CPU: Intel(R) Core(TM) i7-1255U @ 1.70GHz).
 * RAM: 16 GB.
 
