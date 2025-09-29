@@ -1,6 +1,6 @@
 
-# Causal-based Therapy Recommendation (CTR)
-A Python and R implementation of Causal-based Therapy Recommendation (CTR) method in paper "Causal Recommendation Method for Personalised Chemotherapy Optimisation in Breast Cancer".
+# Causality-based Therapy Recommendation (CTR)
+A Python and R implementation of Causality-based Therapy Recommendation (CTR) method in paper "Causal Recommendation Method for Personalised Chemotherapy Optimisation in Breast Cancer".
 
 
 # Infrastructure used to run experiments:
